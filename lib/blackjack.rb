@@ -15,7 +15,7 @@ def prompt_user
 end
 
 def get_user_input
-  user_input = gets.chomp
+  @user_input = gets.chomp
 end
 
 def end_game(card_total)
@@ -34,12 +34,12 @@ end
 def hit?(card_total)
   prompt_user
   get_user_input
-  if user_input == "s"
+  if @user_input == "s"
     puts card_total
-  elsif user_input == "h"
+  elsif @user_input == "h"
     deal_card
   else
-    user_input != "h" || user_input != "s"
+    @user_input != "h" || @user_input != "s"
     invalid_command
     prompt_user
   end
