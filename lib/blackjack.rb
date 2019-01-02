@@ -26,8 +26,9 @@ def initial_round
   2.times do
     deal_card
   end
-  display_card_total
-
+  first_hand = deal_card + deal_card
+  display_card_total(first_hand)
+  return first_hand
 end
 
 def hit?
