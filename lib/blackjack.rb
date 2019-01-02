@@ -38,6 +38,7 @@ def hit?(card_total)
     puts card_total
   elsif @user_input == "h"
     deal_card
+    puts card_total
   else
     @user_input != "h" || @user_input != "s"
     invalid_command
