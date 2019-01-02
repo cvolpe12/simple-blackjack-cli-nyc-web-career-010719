@@ -24,7 +24,6 @@ def end_game(card_total)
   else
     puts display_card_total "Thank you for playing"
   end
-    puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
 def initial_round
