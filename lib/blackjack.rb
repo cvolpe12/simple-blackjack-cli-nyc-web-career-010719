@@ -19,6 +19,11 @@ def get_user_input
 end
 
 def end_game(card_total)
+  if card_total > 21
+    puts "Sorry, you hit #{card_total}. Thanks for playing!"
+  else
+    puts display_card_total "Thank you for playing"
+  end
     puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
